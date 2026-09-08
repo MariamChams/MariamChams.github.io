@@ -1,11 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio Mariam Chamseddin">
+
+
+    <title>portfolio Mariam Chamseddin</title>
+
+    <link rel="icon" type="image/PNG" href="media/icon.png">
+    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
-    
+    <header>
+        <nav aria-label="Hoofdnavigatie">
+            <a class="logo" href="index.html" aria-label="Homepagina">
+                <img src="media/icon.png" alt="Logo">
+            </a>
+            <div class="nav">
+                <a href="index.html" class="active" aria-current="page">whoami</a>
+                <a href="projecten.html">projecten</a>
+                <a href="updates.html">updates</a>
+                <a href="blog.html">blog</a>
+                <a href="#contact">contact</a>
+            </div>
+        </nav>
+
+
+        <div role="progress" class="progress"></div>
+    </header>
+
+    <main>
+        <section class="over-mij">
+            <div class="over-mij-tekst">
+                <h1>Welkom op mijn portfolio</h1>
+
+                <p>
+                    Mijn naam is Mariam een developer die graag praktische, duidelijke en
+                    moderne digitale oplossingen maakt. Ik werk met frontend
+                    en backend en zorg dat projecten
+                    netjes, responsive en gebruiksvriendelijk worden gebouwd.
+                </p>
+
+                <p>
+                    Mijn focus ligt op blijven leren, schoon werken en projecten
+                    stap voor stap sterker maken met HTML, CSS en JavaScript tot
+                    PHP, Java, C#, Python, SQL.
+                </p>
+
+                <div class="buttons">
+                    <a class="button" href="#">CV</a>
+
+                    <a class="button licht-blauw" href="#contact">
+                        <i class="fa-solid fa-phone"></i> contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="profiel-foto">
+                <img src="media/mee.jpg" alt="Profielfoto van Mariam Chamseddin">
+            </div>
+        </section>
+
+        <div class="marquee">
+            HTML - CSS - JavaScript - PHP - SQL - python - Java 
+        </div>
+
+        <section class="home-onderdeel">
+            <h2>Mijn laatste projecten</h2>
+
+            <div class="projecten-home">
+                <article class="project-kaart">
+                    <div class="project-foto">
+                        <img src="media/hotel2.png" alt="Voorbeeld van de hotelsimulatie">
+                    </div>
+
+                    <div class="technieken">
+                        <span>Klasse Diagram</span>
+                        <span>Java</span>
+                        <span>Git</span>
+                        <span>Agile/Scrum</span>
+                    </div>
+
+                    <h3>Hotelsimulatie</h3>
+
+                    <p>
+                        Een hotelsimulatie waarmee gebruikers een JSON-bestand
+                        kunnen uploaden om gaststromen te visualiseren, layouts
+                        te testen en knelpunten in de hotelindeling te vinden.
+                    </p>
+                </article>
+
+                <article class="project-kaart">
+                    <div class="project-foto">
+                        <video class="project-video" autoplay muted loop playsinline>
+                            <source src="media/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="technieken">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <h3>Villa biedplatform</h3>
+
+                    <p>
+                        Een website waar gebruikers villa's bekijken, details
+                        lezen en via een biedsysteem kunnen reageren. Dit was een dynamische webpagina waarbij alle data
+                        uit de database komt.
+                    </p>
+                </article>
+            </div>
+
+            <a class="button project-button" href="projecten.html">
+                <i class="fa-solid fa-code"></i> Bekijk alle projecten <i class="fa-solid fa-code"></i>
+            </a>
+        </section>
+
+        <section class="home-onderdeel">
+            <h2>Blog</h2>
+
+            <article class="blog-kaart">
+                <div class="blog-tekst">
+                    <h3>Mijn eerste ervaring met Java</h3>
+
+                    <p>
+                        Voordat ik met Java begon, had ik al ervaring met andere programmeertalen. Daardoor waren veel
+                        programmeerconcepten, zoals variabelen, functies en voorwaarden, niet helemaal nieuw voor mij.
+                        De overstap naar Java ging daarom vrij soepel.
+                    </p>
+                    <p>Wat wel nieuw was, was de sterke focus op objectgeoriënteerd programmeren. Ik leerde...</p>
+                </div>
+
+                <div class="blog-foto">
+
+                    <img src="media/java.png" alt="blog wat geleerd bij java">
+
+                </div>
+            </article>
+
+            <a class="button blog-button" href="blog.html">
+                <i class="fa-solid fa-code"></i> Bekijk alle blogs <i class="fa-solid fa-code"></i>
+            </a>
+        </section>
+
+        <section class="home-onderdeel">
+            <h2>Laatste updates</h2>
+
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7480678548828147712?collapsed=1"
+                height="627" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-tekst">
+                <h2>Contact</h2>
+
+                <p>
+                    Ben je op zoek naar een enthousiaste en leergierige stagiair, of wil je meer weten over mijn
+                    projecten en vaardigheden? <b>Neem gerust contact met mij op. Ik maak graag kennis.</b>
+                </p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:jouwmail@example.com"> <span><i class="fa-regular fa-envelope"></i></span>
+
+                    <div>
+                        <b>E-mail</b>
+                        <small>873648932@student.hhs.nl</small>
+                    </div>
+                </a>
+
+                <a href="tel:0612345678"> <span><i class="fa-solid fa-phone"></i></span>
+
+                    <div>
+                        <b>Telefoon</b>
+                        <small>06 12345678</small>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/"> <span><i class="fa-brands fa-linkedin"></i></span>
+
+                    <div><b>LinkedIn</b>
+                        <small>Mariam Chamseddin</small>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="jaar">2026</span> Mariam Chamseddin
+        </p>
+    </footer>
 </body>
+
 </html>
