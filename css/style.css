@@ -113,7 +113,7 @@ nav {
     transform-origin: 0 50%;
     /* gebruik animatie scaleProgress */
     animation: scaleProgress auto linear;
-    /* koppeling animatie aan pagina scrollen */
+    /* koppeling animatie aan pagina scrolling die al bestaat */
     animation-timeline: scroll(root);
 }
 
