@@ -471,8 +471,7 @@ main {
 /* h1 van elke pagina */
 
 .projecten-section h1,
-.blog-section h1,
-.updates-section h1 {
+.blog-section h1 {
     color: #4f59c2;
     text-align: center;
     line-height: 1.08;
@@ -496,15 +495,175 @@ main {
 }
 
 footer {
-    padding: 24px;
+    padding: 1vw;
     color: #12131a;
-    background-color: #ffffff;
+    background-color: rgba(203, 221, 242, 0.95);
     text-align: center;
+    margin-top: 2vw;
 }
 
 footer p {
     margin: 0;
 }
+
+
+
+
+
+
+
+
+/* contact pagina */
+
+.contact-pagina {
+    max-width: 1100px;
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.contact-intro h1 {
+    color: #4f59c2;
+    font-size: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* formulier contact pagina */
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-groep {
+    display: grid;
+    gap: 7px;
+}
+
+.form-groep label {
+    font-weight: bold;
+}
+
+.form-groep input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.foutmelding {
+    color: #b00020;
+}
+
+
+.contact-grid .contact-links {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* filter knoppen projecten */
+
+.project-filters {
+    margin: 30px 0 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-filters button {
+    padding: 12px 20px;
+    color: #4f59c2;
+    background-color: white;
+    border: 2px solid #4f59c2;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project-filters button:hover {
+    color: white;
+    background-color: #4f59c2;
+}
+
+.project-filters button:focus-visible {
+    outline: 3px solid #4f59c2;
+    outline-offset: 3px;
+}
+
+
+
+
+/* weer */
+
+.weer-section {
+    padding: 8% 7%;
+    text-align: center;
+}
+
+.weer-section h2 {
+    margin-bottom: 20px;
+    color: #4f59c2;
+    font-size: 32px;
+}
+
+#weer {
+    max-width: 500px;
+    margin: 2vw auto;
+    padding: 8vw;
+    border-radius: 10px;
+}
+
+#weer-emoji {
+    margin: 15px 0;
+    font-size: 65px;
+}
+
+#weer p {
+    margin: 10px 0;
+}
+
+
+#weer.weer-koud {
+    background-color: #cfe8ff;
+}
+
+
+#weer.weer-bewolkt {
+    background-color: #f0efef;
+}
+
+
+#weer.weer-zonnig {
+    background-color: #fff2a8;
+}
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 480px) {
@@ -602,6 +761,39 @@ footer p {
     .contact-links a {
         font-size: 14px;
     }
+
+      .contact-pagina {
+        padding: 45px 25px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+
+    /*  */
+     .weer-section {
+        padding: 40px 20px;
+    }
+
+    .weer-section h2 {
+        font-size: 24px;
+    }
+
+    #weer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #weer-emoji {
+        font-size: 50px;
+    }
+
+    #weer p {
+        font-size: 15px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -632,7 +824,29 @@ footer p {
         grid-template-columns: 1fr 1fr;
     }
 
-  
+   .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15vw;
+    }
+
+    /* */
+    
+    .weer-section {
+        padding: 8% 5%;
+    }
+
+    .weer-section h2 {
+        font-size: 28px;
+    }
+
+    #weer {
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    #weer-emoji {
+        font-size: 55px;
+    }
 }
 
 @media (min-width: 1024px) {
