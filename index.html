@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/PNG" href="media/icon.png">
     <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
-
+    <script src="js/weer.js" defer></script>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,14 +22,13 @@
     <header>
         <nav aria-label="Hoofdnavigatie">
             <a class="logo" href="index.html" aria-label="Homepagina">
-                <img src="media/icon.png" alt="Logo">
+                <img src="media/icon.png" alt="Logo MC">
             </a>
             <div class="nav">
                 <a href="index.html" class="active" aria-current="page">whoami</a>
                 <a href="projecten.html">projecten</a>
-                <a href="updates.html">updates</a>
                 <a href="blog.html">blog</a>
-                <a href="#contact">contact</a>
+                <a href="contact.html">contact</a>
             </div>
         </nav>
 
@@ -58,7 +57,7 @@
                 <div class="buttons">
                     <a class="button" href="media/CV_MariamChamseddin.pdf" target="_blank">CV</a>
 
-                    <a class="button licht-blauw" href="#contact">
+                    <a class="button licht-blauw" href="contact.html">
                         <i class="fa-solid fa-phone"></i> contact
                     </a>
                 </div>
@@ -70,7 +69,7 @@
         </section>
 
         <div class="marquee">
-            HTML - CSS - JavaScript - PHP - SQL - python - Java 
+            HTML - CSS - JavaScript - PHP - SQL - python - Java
         </div>
 
         <section class="home-onderdeel">
@@ -154,49 +153,19 @@
             </a>
         </section>
 
-        <section class="home-onderdeel">
-            <h2>Laatste updates</h2>
+        <section class="weer-section">
+            <h2>Weer vandaag in Den Haag</h2>
 
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7480678548828147712?collapsed=1"
-                height="627" width="504" allowfullscreen="" title="Embedded post"></iframe>
+            <div id="weer">
+                <p id="weer-melding">Weer wordt geladen...</p>
 
-        </section>
+                <div id="weer-emoji"></div>
 
-        <section class="contact-section" id="contact">
-            <div class="contact-tekst">
-                <h2>Contact</h2>
-
-                <p>
-                    Ben je op zoek naar een enthousiaste en leergierige stagiair, of wil je meer weten over mijn
-                    projecten en vaardigheden? <b>Neem gerust contact met mij op. Ik maak graag kennis.</b>
-                </p>
-            </div>
-
-            <div class="contact-links">
-                <a href="mailto:jouwmail@example.com"> <span><i class="fa-regular fa-envelope"></i></span>
-
-                    <div>
-                        <b>E-mail</b>
-                        <small>873648932@student.hhs.nl</small>
-                    </div>
-                </a>
-
-                <a href="tel:0612345678"> <span><i class="fa-solid fa-phone"></i></span>
-
-                    <div>
-                        <b>Telefoon</b>
-                        <small>06 12345678</small>
-                    </div>
-                </a>
-
-                <a href="https://www.linkedin.com/"> <span><i class="fa-brands fa-linkedin"></i></span>
-
-                    <div><b>LinkedIn</b>
-                        <small>Mariam Chamseddin</small>
-                    </div>
-                </a>
+                <p id="temperatuur"></p>
+                <p id="wind"></p>
             </div>
         </section>
+
     </main>
 
     <footer>
