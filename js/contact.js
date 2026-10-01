@@ -33,7 +33,7 @@ form.addEventListener("submit", function(event) {
 
     // naam
     // verwijder spaties begin en eind
-    if (naam.value.trim() === "") {
+    if (naam.value.trim() == "") {
         // foutmelding als die leeg is
         naamFout.textContent = "Vul je naam in.";
         // ook bij aria
@@ -55,7 +55,7 @@ form.addEventListener("submit", function(event) {
     // regular expressions gebruikt voor letters validatie
     const naamPatroon = /^[A-Za-zÀ-ÿ ]+$/;
 
-    if (naamPatroon.test(naam.value.trim()) === false) {
+    if (naamPatroon.test(naam.value.trim()) == false) {
         naamFout.textContent = "Naam mag alleen letters bevatten.";
         naam.setAttribute("aria-invalid", "true");
 
@@ -70,12 +70,11 @@ form.addEventListener("submit", function(event) {
     // email
     // verwijder spatie
     // weer foutmedlign zoasl boven
-    if (email.value.trim() === "") {
+    if (email.value.trim() == "") {
         emailFout.textContent = "Vul je e-mailadres in.";
         email.setAttribute("aria-invalid", "true");
 
-        alert("E-mailadres is verplicht.");
-       
+        
 
         return;
     }
@@ -84,7 +83,7 @@ form.addEventListener("submit", function(event) {
     // regular expressions patroon
     const emailPatroon = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
-    if (emailPatroon.test(email.value.trim()) === false) {
+    if (emailPatroon.test(email.value.trim()) == false) {
         emailFout.textContent = "Vul een geldig e-mailadres in, bijvoorbeeld naam@gmail.com";
         email.setAttribute("aria-invalid", "true");
 
@@ -97,7 +96,7 @@ form.addEventListener("submit", function(event) {
 
     // bericht
     // weer controlle
-    if (bericht.value.trim() === "") {
+    if (bericht.value.trim() == "") {
         berichtFout.textContent = "Vul een bericht in.";
         bericht.setAttribute("aria-invalid", "true");
 
